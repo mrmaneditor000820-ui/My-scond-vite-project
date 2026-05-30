@@ -13,12 +13,12 @@ function Navbar() {
 </h1>
 
       <div className='nav-links'>
-        <Link to="/Home">Home</Link>
-        <Link to="/About">About</Link>
-        <Link to="/Skills">Skills</Link>
-        <Link to="/Projects">Projects</Link>
-        <Link to="/Certifications">Certifications</Link>
-        <Link to="/Contact">Contact</Link>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+
       </div>
 
     </nav>
