@@ -2,7 +2,14 @@ import React from 'react'
 
 function Skills() {
   return (
-    <div></div>
+   <>
+   <div>
+    <h1>Skills & Technologics</h1>
+   </div>
+   <div>
+    
+   </div>
+   </>
   )
 }
 
