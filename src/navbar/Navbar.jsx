@@ -8,8 +8,8 @@ function Navbar() {
     
     <nav className='navbar'>
 
-      <h1 className="logo-text">
-  &lt;Abdul Rehman /&gt;
+<h1 className="logo-text">
+  &lt;<span>Abdul Rehman</span> /&gt;
 </h1>
 
       <div className='nav-links'>
