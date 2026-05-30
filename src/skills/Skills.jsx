@@ -1,5 +1,5 @@
 import React from 'react'
-import javascript from '../assets/js.png'
+import javascript from '../assets/js2.png'
 import typescript from '../assets/type.png'
 import html from '../assets/html.jpeg'
 import react from '../assets/react.png'
