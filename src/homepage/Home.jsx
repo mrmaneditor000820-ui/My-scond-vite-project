@@ -19,7 +19,13 @@ function Home() {
        View Projects
       </button>
     </div>
-    
+    <div>
+      <a href="https://www.linkedin.com/feed/">linkedin</a>
+      <a href="https://github.com/mrmaneditor000820-ui">Ghithub</a>
+    </div>
+    <div>
+      <img src="" alt="" />
+    </div>
     </>
   )
 }
