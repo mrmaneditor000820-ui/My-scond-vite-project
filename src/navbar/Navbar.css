@@ -16,6 +16,9 @@ body{
         #eef2ff 100%
     );
 }
+section {
+  scroll-margin-top: 120px;
+}
 
 /* Navbar */
 
