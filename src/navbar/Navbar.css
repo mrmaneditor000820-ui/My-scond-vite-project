@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #020617;
+    background: #fcfcfd;
     font-family: sans-serif;
 }
 
@@ -38,27 +38,13 @@ body{
     z-index: 1000;
 }
 
-.logo h1{
-    color: white;
-    font-size: 34px;
-    font-weight: 700;
-    letter-spacing: 1px;
 
-    cursor: pointer;
 
-    transition: 0.3s;
-}
-
-.logo h1:hover{
-    color: #38bdf8;
-    text-shadow: 0 0 15px #38bdf8;
-}
 .logo-text{
-    color: #38bdf8;
+    color: #1248c4;
     font-size: 34px;
     font-weight: bold;
-
-    text-shadow: 0 0 10px #38bdf8;
+    text-shadow: 0 0 10px #049ee0;
 }
 
 .nav-links{
@@ -69,7 +55,7 @@ body{
 
 .nav-links a{
     text-decoration: none;
-    color: #cbd5e1;
+    color: #000409;
 
     font-size: 17px;
     font-weight: 500;
@@ -84,13 +70,13 @@ body{
 }
 
 .nav-links a:hover{
-    color: white;
+    color: #1248c4;
 
     background: rgba(56,189,248,0.15);
 
     box-shadow:
     0 0 10px rgba(56,189,248,0.4),
-    0 0 20px rgba(56,189,248,0.2);
+    0 0 20px rgba(0, 170, 243, 0.2);
 
     transform: translateY(-2px);
 }
@@ -106,7 +92,7 @@ body{
     width: 0%;
     height: 2px;
 
-    background: #38bdf8;
+    background: #1606c3;
 
     transition: 0.3s ease;
 
@@ -115,4 +101,5 @@ body{
 
 .nav-links a:hover::before{
     width: 70%;
+    
 }
