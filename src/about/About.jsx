@@ -45,25 +45,6 @@ function About() {
 
       </div>
 
-      <div className="stats">
-
-        <div className="stat-box">
-          <h2>10+</h2>
-          <p>Projects</p>
-        </div>
-
-        <div className="stat-box">
-          <h2>1+</h2>
-          <p>Years Learning</p>
-        </div>
-
-        <div className="stat-box">
-          <h2>100%</h2>
-          <p>Dedication</p>
-        </div>
-
-      </div>
-
     </section>
   )
 }
