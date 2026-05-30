@@ -99,6 +99,32 @@ h2 {
 .social-links a:hover {
     color: #2563eb;
 }
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  color: #374151;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.social-links a svg {
+  font-size: 1.5rem;
+}
+
+.social-links a:hover {
+  color: #2563eb;
+  transform: translateY(-3px);
+}
 
 .home-image {
     flex: 1;

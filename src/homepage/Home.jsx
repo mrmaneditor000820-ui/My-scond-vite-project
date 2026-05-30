@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import MyImage from '../assets/My.jpeg'
 import { TypeAnimation } from 'react-type-animation';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 function Home() {
@@ -37,15 +38,25 @@ function Home() {
           <button className="secondary-btn">View Projects</button>
         </div>
 
-        <div className="social-links">
-          <a href="https://www.linkedin.com/feed/" target="_blank">
-            LinkedIn
-          </a>
+      <div className="social-links">
+  <a
+    href="https://www.linkedin.com/in/abdul-rehman-763b11396/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <FaLinkedin />
+    LinkedIn
+  </a>
 
-          <a href="https://github.com/mrmaneditor000820-ui" target="_blank">
-            GitHub
-          </a>
-        </div>
+  <a
+    href="https://github.com/mrmaneditor000820-ui"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <FaGithub />
+    GitHub
+  </a>
+</div>
 
       </div>
 
