@@ -3,6 +3,7 @@ import Market from '../assets/market.png'
 import Nexcent from '../assets/nexcent.png'
 import Rentcar from '../assets/rentcar.png'
 import Ring from '../assets/ring.png'
+import './Projects.css'
 
 function Projects() {
   return (
