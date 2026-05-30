@@ -1,6 +1,13 @@
 import React from 'react'
-import Javascript from '../assets/download.png'
-import Typescript from '../assets/assets/download (1).png'
+import Javascript from '../assets/js.png'
+import Typescript from '../assets/assets/type.png'
+import Html from '../assets/assets/html.jpeg'
+import Typescript from '../assets/assets/type.png'
+import Typescript from '../assets/assets/type.png'
+import Typescript from '../assets/assets/type.png'
+import Typescript from '../assets/assets/type.png'
+import Typescript from '../assets/assets/type.png'
+import Typescript from '../assets/assets/type.png'
 
 function Skills() {
   return (
