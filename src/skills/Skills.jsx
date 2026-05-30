@@ -1,13 +1,13 @@
 import React from 'react'
-import Javascript from '../assets/js.png'
-import Typescript from '../assets/assets/type.png'
-import Html from '../assets/assets/html.jpeg'
-import Typescript from '../assets/assets/type.png'
-import Typescript from '../assets/assets/type.png'
-import Typescript from '../assets/assets/type.png'
-import Typescript from '../assets/assets/type.png'
-import Typescript from '../assets/assets/type.png'
-import Typescript from '../assets/assets/type.png'
+import javascript from '../assets/js.png'
+import typescript from '../assets/assets/type.png'
+import html from '../assets/assets/html.jpeg'
+import react from '../assets/assets/react.png'
+import Node from '../assets/assets/node.png'
+import Fire from '../assets/assets/fire.png'
+import Css from '../assets/assets/css.png'
+import Boot from '../assets/assets/boot.jpeg'
+import Ghithub from '../assets/assets/ghithub.png'
 
 function Skills() {
   return (
@@ -16,29 +16,27 @@ function Skills() {
     <h1>Skills & Technologics</h1>
    </div>
    <div>
-    <img src={Javascript} alt="JavaScript" />
+    <img src={javascript} alt="JavaScript" />
     <p>JavaScript</p>
-     <img src={Typescript} alt="TypeScript" />
+     <img src={typescript} alt="TypeScript" />
     <p>TypeScript</p>
-     <img src={Javascript} alt="JavaScript" />
-    <p>JavaScript</p>
-     <img src={Javascript} alt="JavaScript" />
-    <p>JavaScript</p>
-     <img src={Javascript} alt="JavaScript" />
-    <p>JavaScript</p>
-     <img src={Javascript} alt="JavaScript" />
-    <p>JavaScript</p>
-     <img src={Javascript} alt="JavaScript" />
-    <p>JavaScript</p>
-     <img src={Javascript} alt="JavaScript" />
-    <p>JavaScript</p>
-     <img src={Javascript} alt="JavaScript" />
-    <p>JavaScript</p>
-     <img src={Javascript} alt="JavaScript" />
-    <p>JavaScript</p>
+     <img src={html} alt="HTML" />
+    <p>HTML</p>
+     <img src={react} alt="React" />
+    <p>React</p>
+     <img src={Node} alt="Node.js" />
+    <p>Node.js</p>
+     <img src={Fire} alt="Firebase" />
+    <p>Firebase</p>
+     <img src={Css} alt="CSS" />
+    <p>CSS</p>
+     <img src={Boot} alt="Bootstrap" />
+    <p>Bootstrap</p>
+     <img src={Ghithub} alt="GitHub" />
+    <p>GitHub</p>
    </div>
-   </>
+    </>
   )
 }
 
-export default Skills
+export default Skills;
