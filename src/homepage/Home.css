@@ -14,8 +14,14 @@
     flex: 1;
 }
 
+h2 {
+  color: #2563eb;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 15px 0;
+}
 .home-content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     color: #111827;
     line-height: 1.2;
