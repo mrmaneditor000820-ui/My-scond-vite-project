@@ -19,33 +19,32 @@ body{
 section {
   scroll-margin-top: 120px;
 }
-
+html{
+    overflow-x: hidden;
+}
 /* Navbar */
 
 .navbar{
-    width: 92%;
-    max-width: 1400px;
-    height: 80px;
+    width: 90%;
+    max-width: 1500px;
 
-    margin: 20px auto;
-    padding: 0 40px;
+    margin: 10px auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    background: rgba(255,255,255,0.85);
-    backdrop-filter: blur(20px);
+    padding: 10px 20px;
 
-    border: 1px solid rgba(0,0,0,0.05);
-    border-radius: 18px;
+    background: white;
+
+    border-radius: 20px;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,0.08),
-        0 2px 10px rgba(37,99,235,0.08);
+    0 10px 30px rgba(0,0,0,0.08);
 
     position: sticky;
-    top: 15px;
+    top: 10px;
     z-index: 1000;
 
     transition: 0.3s ease;
@@ -53,8 +52,8 @@ section {
 
 .navbar:hover{
     box-shadow:
-        0 15px 40px rgba(0,0,0,0.12),
-        0 5px 15px rgba(37,99,235,0.15);
+    0 15px 40px rgba(0,0,0,0.12),
+    0 5px 15px rgba(37,99,235,0.15);
 }
 
 /* Logo */
@@ -62,7 +61,7 @@ section {
 .logo-text{
     font-size: 1.8rem;
     font-weight: 800;
-    color: #111827;
+    color: #0450f3;
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease;
@@ -72,11 +71,7 @@ section {
     transform: scale(1.05);
 }
 
-.logo-text span{
-    color: #2563eb;
-}
-
-/* Links */
+/* Desktop Links */
 
 .nav-links{
     display: flex;
@@ -95,8 +90,6 @@ section {
     transition: all 0.3s ease;
 }
 
-/* Underline Animation */
-
 .nav-links a::after{
     content: "";
     position: absolute;
@@ -105,7 +98,7 @@ section {
 
     transform: translateX(-50%);
 
-    width: 0%;
+    width: 0;
     height: 3px;
 
     background: linear-gradient(
@@ -128,48 +121,73 @@ section {
     width: 100%;
 }
 
-/* Active Link */
+/* Hamburger */
 
-.nav-links a.active{
+.menu-icon{
+    display: none;
+    font-size: 1.8rem;
     color: #2563eb;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 /* Mobile */
 
-@media (max-width: 900px){
-
-    .navbar{
-        flex-direction: column;
-        height: auto;
-        padding: 25px;
-        gap: 20px;
-    }
-
-    .nav-links{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .logo-text{
-        font-size: 1.5rem;
-    }
-
-}
-
-@media (max-width: 500px){
+@media(max-width:768px){
 
     .navbar{
         width: 95%;
-        padding: 20px;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .logo-text{
+        font-size: 1.3rem;
+    }
+
+    .menu-icon{
+        display: block;
     }
 
     .nav-links{
-        gap: 15px;
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 25px;
+
+        border-radius: 15px;
+
+        box-shadow:
+        0 15px 35px rgba(0,0,0,0.08);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition: 0.3s ease;
+    }
+
+    .nav-links.active{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 
     .nav-links a{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
-
 }

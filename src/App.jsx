@@ -6,6 +6,7 @@ import Projects from './projects/Projects'
 import Certifications from './certifications/Certifications'
 import Contact from './contact/Contact'
 import Footer from './footer/Footer'
+import './App.css'
 
 function App() {
   return (
