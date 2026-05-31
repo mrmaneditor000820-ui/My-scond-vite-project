@@ -38,10 +38,10 @@
     border-radius: 25px;
     overflow: hidden;
 
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(50, 5, 252, 0.05);
 
     box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.08);
+        0 10px 30px rgba(4, 153, 246, 0.08);
 
     transition: all 0.35s ease;
 }
@@ -50,7 +50,7 @@
     transform: translateY(-8px);
 
     box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.12);
+        0 20px 40px rgba(2, 93, 250, 0.12);
 }
 
 .project-card a {
@@ -62,7 +62,7 @@
 
 .project-card img {
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
 
     border-bottom: 1px solid #f1f5f9;
