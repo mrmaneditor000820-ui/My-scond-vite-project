@@ -5,13 +5,13 @@ import Skills from './skills/Skills'
 import Projects from './projects/Projects'
 import Certifications from './certifications/Certifications'
 import Contact from './contact/Contact'
+import Footer from './footer/Footer'
 
 function App() {
   return (
     <>
       <Navbar />
       
-
       <section id="home">
         <Home />
       </section>
@@ -35,6 +35,7 @@ function App() {
       <section id="contact">
         <Contact />
       </section>
+      <Footer />
     </>
   )
 }
