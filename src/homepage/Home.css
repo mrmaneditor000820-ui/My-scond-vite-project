@@ -147,7 +147,6 @@ h2 {
 
 html{
     scroll-behavior:smooth;
-    scroll-padding-top:100px;
 }
 
 ::-webkit-scrollbar{
