@@ -50,7 +50,6 @@ function Home() {
             rel="noreferrer"
           >
             <FaLinkedin />
-            LinkedIn
           </a>
 
           <a
@@ -59,7 +58,6 @@ function Home() {
             rel="noreferrer"
           >
             <FaGithub />
-            GitHub
           </a>
         </div>
 
