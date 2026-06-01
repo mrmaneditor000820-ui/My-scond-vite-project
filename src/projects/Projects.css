@@ -117,7 +117,7 @@
         grid-template-columns: 1fr;
     }
 
-    .project-card img {
-        height: 220px;
-    }
-}
+ .project-card img {
+         height: 100%; 
+    } 
+} 
