@@ -1,32 +1,42 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background: linear-gradient(
-        135deg,
-        #ffffff 0%,
-        #f8fafc 50%,
-        #eef2ff 100%
-    );
+/* ✅ FIX 1: overflow-x band, aur body pe top padding taake content navbar ke neeche na jaye */
+html {
+    overflow-x: hidden;
 }
+
+body {
+    overflow-x: hidden;
+    padding-top: 80px;
+    background: linear-gradient(135deg,
+            #ffffff 0%,
+            #f8fafc 50%,
+            #eef2ff 100%);
+}
+
 section {
-  scroll-margin-top: 120px;
+    scroll-margin-top: 120px;
 }
 
 /* Navbar */
 
-.navbar{
+.navbar {
     width: 90%;
     max-width: 1500px;
 
-    margin: 10px auto;
+    /* ✅ FIX 2: position fixed - hamesha upar rahega scroll pe bhi */
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 
     display: flex;
     justify-content: space-between;
@@ -39,24 +49,33 @@ section {
     border-radius: 20px;
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,0.08);
+        0 10px 30px rgba(0, 0, 0, 0.08);
 
-    position: sticky;
-    top: 10px;
     z-index: 1000;
 
     transition: 0.3s ease;
 }
 
-.navbar:hover{
+/* ✅ FIX 3: Scroll karne pe navbar thoda compact aur glassy ho jata hai */
+.navbar.scrolled {
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     box-shadow:
-    0 15px 40px rgba(0,0,0,0.12),
-    0 5px 15px rgba(37,99,235,0.15);
+        0 15px 40px rgba(0, 0, 0, 0.12),
+        0 5px 15px rgba(37, 99, 235, 0.15);
+}
+
+.navbar:hover {
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12),
+        0 5px 15px rgba(37, 99, 235, 0.15);
 }
 
 /* Logo */
 
-.logo-text{
+.logo-text {
     font-size: 1.8rem;
     font-weight: 800;
     color: #0450f3;
@@ -65,19 +84,19 @@ section {
     transition: 0.3s ease;
 }
 
-.logo-text:hover{
+.logo-text:hover {
     transform: scale(1.05);
 }
 
 /* Desktop Links */
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     gap: 35px;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     color: #4b5563;
     font-size: 1rem;
@@ -88,7 +107,7 @@ section {
     transition: all 0.3s ease;
 }
 
-.nav-links a::after{
+.nav-links a::after {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -99,29 +118,27 @@ section {
     width: 0;
     height: 3px;
 
-    background: linear-gradient(
-        90deg,
-        #2563eb,
-        #60a5fa
-    );
+    background: linear-gradient(90deg,
+            #2563eb,
+            #60a5fa);
 
     border-radius: 10px;
 
     transition: 0.3s ease;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: #2563eb;
     transform: translateY(-3px);
 }
 
-.nav-links a:hover::after{
+.nav-links a:hover::after {
     width: 100%;
 }
 
 /* Hamburger */
 
-.menu-icon{
+.menu-icon {
     display: none;
     font-size: 1.8rem;
     color: #2563eb;
@@ -131,29 +148,30 @@ section {
 
 /* Mobile */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .navbar{
-        width: 95%;
-        padding: 15px 20px;
-        position: relative;
+    .navbar {
+        width: 90%;
+        padding: 12px 20px;
+        /* ✅ position: fixed upar se aa raha hai - yahan override nahi */
     }
 
-    .logo-text{
+    .logo-text {
         font-size: 1.3rem;
     }
 
-    .menu-icon{
+    .menu-icon {
         display: block;
     }
 
-    .nav-links{
-        position: absolute;
+    .nav-links {
+        position: fixed;
 
         top: 75px;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
 
-        width: 100%;
+        width: 90vw;
 
         background: white;
 
@@ -169,23 +187,62 @@ section {
         border-radius: 15px;
 
         box-shadow:
-        0 15px 35px rgba(0,0,0,0.08);
+            0 15px 35px rgba(0, 0, 0, 0.08);
 
         opacity: 0;
         visibility: hidden;
 
-        transform: translateY(-10px);
-
         transition: 0.3s ease;
     }
 
-    .nav-links.active{
+    .nav-links.active {
         opacity: 1;
         visibility: visible;
-        transform: translateY(0);
+        transform: translateX(-50%) translateY(0);
     }
 
-    .nav-links a{
+    .nav-links a {
         font-size: 1rem;
+    }
+}
+/* Tablet / iPad - 769px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .navbar {
+        width: 96%;
+        padding: 10px 18px;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+/* iPad Pro / Large Tablet - 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .navbar {
+        width: 92%;
+        padding: 10px 20px;
+    }
+
+    .logo-text {
+        font-size: 1.6rem;
+    }
+
+    .nav-links {
+        gap: 25px;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
     }
 }

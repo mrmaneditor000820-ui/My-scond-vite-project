@@ -6,6 +6,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 function Home() {
+  
   return (
     <section className="home">
 
