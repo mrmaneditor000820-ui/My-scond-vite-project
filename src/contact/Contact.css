@@ -219,6 +219,7 @@
         padding:0 15px;
     }
 
+
     .contact-heading h1{
         font-size:2.3rem;
     }
@@ -228,7 +229,7 @@
     }
 
     .contact-container{
-        width:95%;
+        width:92%;
         grid-template-columns:1fr;
         gap:25px;
     }
