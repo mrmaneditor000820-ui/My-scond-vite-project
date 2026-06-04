@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 
- const first = useContext()
+export const Theme = useContext()
 
 
 
@@ -11,7 +11,9 @@ function Themecontaxt() {
     
 
   return (
-    <div>Themecontaxt</div>
+    <Theme.Provider>
+      
+    </Theme.Provider>
   )
 }
 
