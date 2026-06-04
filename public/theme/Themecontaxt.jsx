@@ -4,11 +4,11 @@ export const Theme = useContext()
 
 function Themecontaxt({children}) {
 
-const [first, setfirst] = useState(second)
+const [theme, settheme] = useState("halka")
     
 
   return (
-    <Theme.Provider >
+    <Theme.Provider value={{theme,settheme}}>
     {children}
     </Theme.Provider>
   )
