@@ -5,14 +5,14 @@ export const Theme = useContext()
 
 
 
-function Themecontaxt() {
+function Themecontaxt({children}) {
 
 
     
 
   return (
     <Theme.Provider>
-      
+
     </Theme.Provider>
   )
 }
