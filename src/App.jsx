@@ -7,14 +7,23 @@ import Certifications from './certifications/Certifications'
 import Contact from './contact/Contact'
 import Footer from './footer/Footer'
 import './App.css'
+import { useContext } from 'react'
+import { Theme } from '../public/theme/Themecontaxt'
+
 
 function App() {
   
+  const {user} = useContext(Theme)
   return (
     
     <>
+    <h1>hi i am {user.name}</h1>
+    <h1>And my age is  {user.age}</h1>
+    <h1>And my email is {user.email}</h1>
+
 
     
+
       {/* <Navbar /> */}
       
       {/* <section id="home">
