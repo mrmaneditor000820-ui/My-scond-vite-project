@@ -13,7 +13,7 @@ import { Theme } from '../public/theme/Themecontaxt'
 
 function App() {
   
-  const {user} = useContext(Theme)
+  const {user,setuser} = useContext(Theme)
   const change = ()=>{
     setuser({
       name :"sikander ali",
@@ -21,6 +21,7 @@ function App() {
       email :"sikanderali@gamil.com"
     })
   }
+  
   return (
     
     <>
