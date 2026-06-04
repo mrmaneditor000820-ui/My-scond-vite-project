@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
+import React, { createContext } from 'react'
 
-export const Theme = useContext()
+export const Theme = createContext()
 
 function Themecontaxt({children}) {
 
