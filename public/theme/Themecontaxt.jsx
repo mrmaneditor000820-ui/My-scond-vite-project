@@ -14,4 +14,4 @@ const [theme, settheme] = useState("halka")
   )
 }
 
-export default Themecontaxt
+export default Themecontaxt;
