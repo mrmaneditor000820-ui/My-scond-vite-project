@@ -13,32 +13,32 @@ function App() {
   return (
     
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       
-      <section id="home">
+      {/* <section id="home">
         <Home />
-      </section>
+      </section> */}
 
-      <section id="about">
+      {/* <section id="about">
         <About />
-      </section>
+      </section> */}
 
-      <section id="skills">
+      {/* <section id="skills">
         <Skills />
-      </section>
+      </section> */}
 
-      <section id="projects">
+      {/* <section id="projects">
         <Projects />
-      </section>
+      </section> */}
 
-      <section id="certifications">
+      {/* <section id="certifications">
         <Certifications />
-      </section>
+      </section> */}
 
-      <section id="contact">
+      {/* <section id="contact">
         <Contact />
-      </section>
-      <Footer />
+      </section> */}
+      {/* <Footer /> */}
     </>
   )
 }
