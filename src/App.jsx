@@ -35,7 +35,7 @@ function App() {
 
     
 
-      {/* <Navbar /> */}
+      <Navbar />
       
       {/* <section id="home">
         <Home />
