@@ -33,7 +33,6 @@ function App() {
     >Change data</button>
 
 
-    
 
       <Navbar />
       
@@ -65,4 +64,5 @@ function App() {
   )
 }
 
-export default App
+export default App;
+
