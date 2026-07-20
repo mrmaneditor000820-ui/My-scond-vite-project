@@ -7,59 +7,59 @@ import Certifications from './certifications/Certifications'
 import Contact from './contact/Contact'
 import Footer from './footer/Footer'
 import './App.css'
-import { useContext } from 'react'
-import { Theme } from '../public/theme/Themecontaxt'
+// import { useContext } from 'react'
+// import { Theme } from '../public/theme/Themecontaxt'
 
 
 function App() {
   
-  const {user,setuser} = useContext(Theme)
-  const change = ()=>{
-    setuser({
-      name :"sikander ali",
-      age :"35",
-      email :"sikanderali@gamil.com"
-    })
-  }
+//   const {user,setuser} = useContext(Theme)
+//   const change = ()=>{
+//     setuser({
+//       name :"sikander ali",
+//       age :"35",
+//       email :"sikanderali@gamil.com"
+//     })
+//   }
   
   return (
-    
     <>
-    <h1>hi i am {user.name}</h1>
-    <h1>And my age is  {user.age}</h1>
-    <h1>And my email is {user.email}</h1>
-    <button style={{border:"2px solid blue",padding:"5px",borderRadius:"20px"}}
-    onClick={change}
-    >Change data</button>
+    
+{/* //     <h1>hi i am {user.name}</h1> */}
+{/* //     <h1>And my age is  {user.age}</h1> */}
+{/* //     <h1>And my email is {user.email}</h1> */}
+{/* //     <button style={{border:"2px solid blue",padding:"5px",borderRadius:"20px"}} */}
+{/* //     onClick={change} */}
+{/* //     >Change data</button> */}
 
 
 
       <Navbar />
       
-      {/* <section id="home">
+      <section id="home">
         <Home />
-      </section> */}
+      </section>
 
-      {/* <section id="about">
+      <section id="about">
         <About />
-      </section> */}
+      </section>
 
-      {/* <section id="skills">
+      <section id="skills">
         <Skills />
-      </section> */}
+      </section>
 
-      {/* <section id="projects">
+      <section id="projects">
         <Projects />
-      </section> */}
+      </section> 
 
-      {/* <section id="certifications">
+      <section id="certifications">
         <Certifications />
-      </section> */}
+      </section>
 
-      {/* <section id="contact">
+      <section id="contact">
         <Contact />
-      </section> */}
-      {/* <Footer /> */}
+      </section>
+       <Footer />
     </>
   )
 }

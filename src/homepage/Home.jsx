@@ -23,7 +23,7 @@ function Home() {
               2000,
               'Frontend Developer',
               2000,
-              'Problem Solver',
+              'Backend Developer',
               2000,
             ]}
             speed={50}
