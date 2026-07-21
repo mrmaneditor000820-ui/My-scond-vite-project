@@ -10,7 +10,7 @@ function Projects() {
   return (
     <>
       <div className="projects-heading">
-        <h1>Featured Projects</h1>
+        <h1>Big Projects</h1>
       </div>
 
       <div className="projects-container">
